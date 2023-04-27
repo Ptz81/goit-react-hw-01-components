@@ -1,34 +1,53 @@
-import user from './user.json'
-import css from './Profile.module.css'
-import Description from './Description'
-import Stats from './Stats';
-// const data = {
-//   "username": "Jacques Gluke",
-//   "tag": "jgluke",
-//   "location": "Ocho Rios, Jamaica",
-//   "avatar": "https://cdn-icons-png.flaticon.com/512/2922/2922506.png",
-//   "stats": {
-//     "followers": 5603,
-//     "views": 4827,
-//     "likes": 1308
-//   }
-// }
 
-export const Profile = () => {
+import css from './Profile.module.css'
+import PropTypes from 'prop-types';
+
+
+export const Profile = ({username, tag, location, avatar, stats}) => {
   return (
-    <div className={css.profile}>
-      <Description items={ user } />
-      <Stats />
-    </div>
+<div class="profile">
+  <div className={css.description}>
+    <img
+      src={avatar}
+      alt={username}
+      className={css.avatar}
+    />
+    <p className={css.name}>{username}</p>
+    <p className={css.tag}>{tag}</p>
+    <p className={css.location}>{location}</p>
+  </div>
+
+  <ul className={css.stats}>
+    <li>
+      <span className="followers">Followers</span>
+      <span className="quantity">{stats.followers}</span>
+    </li>
+      <li>
+      <span className="label">Views</span>
+      <span className="quantity">{stats.views}</span>
+    </li>
+      <li>
+      <span className="label">Likes</span>
+      <span className="quantity">{stats.likes}</span>
+    </li>
+  </ul>
+</div>
   );
 };
 
-<Profile
-  username={user.username}
-  tag={user.tag}
-  location={user.location}
-  avatar={user.avatar}
-  stats={user.stats}
-/>
 
+
+Profile.propTypes = {
+  username: PropTypes.string.isRequired,
+  tag: PropTypes.string.isRequired,
+  location: PropTypes.string.isRequired,
+  avatar: PropTypes.string.isRequired,
+  stats: PropTypes.shape(
+    {
+      followers: PropTypes.number.isRequired,
+      views: PropTypes.number.isRequired,
+      likes: PropTypes.number.isRequired,
+    }
+  ).isRequired,
+}
 
