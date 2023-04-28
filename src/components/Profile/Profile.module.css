@@ -1,3 +1,77 @@
 .profile{
   display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  margin: 20px auto;
+  width: 400px;
+  height: auto;
+  border: 2px brown solid;
+  border-radius: 10px;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+padding: 10px;
+}
+
+.profile:hover{
+  background-color: azure;
+  border: 2px darkgreen solid;
+}
+
+.avatar{
+  max-width: 200px;
+  height: auto;
+  margin-top: 20px;
+  border-radius: 50%;
+  border: 2px brown solid;
+  background-color: burlywood;
+}
+
+.avatar:hover{
+  /* scale: 1.1; */
+  background-color: antiquewhite;
+  transform: scale(1.05 );
+  transition: transform 300ms cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+
+.description{
+  text-align: center;
+  font-size: 18px;
+}
+
+.name{
+  font-size: 28px;
+  font-weight: bold;
+}
+.tag{
+  font-style: italic;
+  color: crimson;
+}
+.location{
+  font-weight: bold;
+}
+
+.stats{
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 0;
+gap: 20px;
+}
+
+.label{
+  font-weight: 700;
+  margin-right: 10px;
+}
+
+
+
+.quantity{
+color: darkgoldenrod;
+font-size: 20px;
+}
+
+.quantity:hover{
+  font-weight: 600;
 }
