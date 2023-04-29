@@ -36,6 +36,7 @@ width: 100%;
     width: 25%;
     color: white;
     overflow: hidden;
+    border: white 0.5px solid;
 }
 
 .item:hover{
