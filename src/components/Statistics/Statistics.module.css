@@ -7,7 +7,7 @@
     height: auto;
     border: #212121 2px solid;
     border-radius: 5px;
-
+  background-color: rgb(255, 229, 229);
     text-align: center;
 }
 .title{
@@ -15,21 +15,34 @@
   color: grey;
   font-size: 28px;
 }
+
+.title:hover{
+  color: #212121;
+  transition: color cubic-bezier(0.075, 0.82, 0.165, 1), 300ms;
+}
+
 .statList{
   display: flex;
 padding: 0;
 margin: 0;
 list-style: none;
+width: 100%;
 }
 
 .item{
   display: flex;
     flex-direction: column;
     align-items: center;
-    width: 80px;
+    width: 25%;
     color: white;
     overflow: hidden;
 }
+
+.item:hover{
+  color: #212121;
+  transition: color cubic-bezier(0.075, 0.82, 0.165, 1), 300ms ;
+}
+
 .label{
   margin: 10px;
   font-size: 14px;

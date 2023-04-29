@@ -8,7 +8,7 @@
   border: 2px brown solid;
   border-radius: 10px;
   font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-padding: 10px;
+/* padding: 10px; */
 }
 
 .profile:hover{
