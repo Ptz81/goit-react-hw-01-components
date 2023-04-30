@@ -1,0 +1,29 @@
+.transactionHistory{
+  /* text-align: center; */
+  width: 400px;
+  margin-left: auto;
+  margin-right: auto;
+  border: 1px solid #ccc;
+
+}
+th, td {
+  border: 1px solid brown;
+  padding: 10px;
+
+}
+
+th{
+  border-collapse: collapse;
+}
+tr{
+  background-color: whitesmoke;
+
+}
+
+th:hover{
+  background-color: azure;
+}
+
+td:hover{
+  background-color: wheat;
+}
