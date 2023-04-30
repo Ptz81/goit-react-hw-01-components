@@ -42,11 +42,10 @@
   font-weight: bold;
 }
 .tag{
-  font-style: italic;
-  color: crimson;
+  color: grey;
 }
 .location{
-  font-weight: bold;
+  color: grey;
 }
 
 .stats{

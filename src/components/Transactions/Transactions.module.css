@@ -4,7 +4,7 @@
   margin-left: auto;
   margin-right: auto;
   border: 1px solid #ccc;
-
+  color: #3f3f3f;
 }
 th, td {
   border: 1px solid brown;
@@ -12,8 +12,13 @@ th, td {
 
 }
 
+/* td[0]{
+  color: blue;
+} */
+
 th{
   border-collapse: collapse;
+    width: 60%;
 }
 tr{
   background-color: whitesmoke;
@@ -26,4 +31,10 @@ th:hover{
 
 td:hover{
   background-color: wheat;
+}
+
+table td:first-child{
+  text-transform: uppercase;
+  color: brown;
+  font-weight: 600;
 }
